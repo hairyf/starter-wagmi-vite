@@ -1,30 +1,14 @@
-# React + TypeScript + Vite + Wagmi + Rainbowkit
+## Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- ⚡️ [React](https://react.docschina.org/), [Vite 5](https://vitejs.dev/), [pnpm](https://pnpm.io/) - born with fastness
+- 🗃️ [Rainbowkit 2](https://beta.rainbowkit.com/guides/rainbowkit-wagmi-v2), [Wagmi](https://wagmi.sh/react/getting-started), [Ethers 5](https://github.com/ethers-io/ethers.js) Rapid development of DeApp
+- 🗒 Generate multiple contract types through `pnpm gen:abi`
+- 🗂 File based routing via [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages)
+- 🎨 Free to use Tailwind CSS via [UnoCSS](https://github.com/unocss/unocss)
+- 🔍 [Use icons](https://github.com/unocss/unocss/tree/main/packages/preset-icons) from any icon sets with classes - [Icônes](https://icones.netlify.app/)
 
-Currently, two official plugins are available:
+## Credits
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- [Rainbowkit](https://github.com/rainbow-me/rainbowkit)
+- [Wagmi](https://wagmi.sh/react/getting-started)
+- [Vite](https://vitejs.dev/)
