@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "preview": "vite preview",
-    "gen:abi": "abi-types-generator './src/config/contracts/abis/jsonc/ERC20.json' --output='./src/config/contracts/abis/types' --provider ethers_v5"
+    "gen:abi": "esno scripts/gen-abi.ts"
   },
   "dependencies": {
     "@rainbow-me/rainbowkit": "2.0.0-beta.2",
@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.3",
+    "@types/node": "^20.11.7",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
@@ -33,11 +34,13 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "esno": "^4.0.0",
     "ethereum-abi-types-generator": "^1.3.4",
     "iconify-svgo-loader": "^1.0.3",
     "typescript": "^5.2.2",
     "unocss": "^0.58.4",
     "vite": "^5.0.8",
-    "vite-plugin-pages": "^0.32.0"
+    "vite-plugin-pages": "^0.32.0",
+    "zx": "^7.2.3"
   }
 }
