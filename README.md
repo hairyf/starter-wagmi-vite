@@ -1,11 +1,14 @@
+# React Wagmi Starter Kit
+
+leverages the capabilities of [Rainbowkit 2](https://beta.rainbowkit.com/guides/rainbowkit-wagmi-v2) and [Wagmi 2](https://github.com/wevm/wagmi) for seamless wallet integration and authentication. The kit also includes Ethers 5 for interacting with the Ethereum blockchain.
+
 ## Features
 
-- ⚡️ [React](https://react.docschina.org/), [Vite 5](https://vitejs.dev/), [pnpm](https://pnpm.io/) - born with fastness
-- 🗃️ [Rainbowkit 2](https://beta.rainbowkit.com/guides/rainbowkit-wagmi-v2), [Wagmi](https://wagmi.sh/react/getting-started), [Ethers 5](https://github.com/ethers-io/ethers.js) Rapid development of DeApp
-- 🗒 Generate multiple contract types through `pnpm gen:abi`
-- 🗂 File based routing via [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages)
-- 🎨 Free to use Tailwind CSS via [UnoCSS](https://github.com/unocss/unocss)
-- 🔍 [Use icons](https://github.com/unocss/unocss/tree/main/packages/preset-icons) from any icon sets with classes - [Icônes](https://icones.netlify.app/)
+- ⚡️ Built with speed using [Vite 5](https://vitejs.dev/), [React](https://react.docschina.org/), [Rainbowkit 2](https://beta.rainbowkit.com/guides/rainbowkit-wagmi-v2), [Wagmi 2](https://github.com/wevm/wagmi), and [Ethers 5](https://github.com/ethers-io/ethers.js)
+- 🗒 Generate multiple contract types easily with the `pnpm gen:abi` command
+- 🗂 File-based routing powered by [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages)
+- 🎨 Seamless integration with Tailwind CSS using [UnoCSS](https://github.com/unocss/unocss)
+- 🔍 [Utilize icons](https://github.com/unocss/unocss/tree/main/packages/preset-icons) from any icon sets using classes with [Icônes](https://icones.netlify.app/)
 
 ## Credits
 
