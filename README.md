@@ -1,4 +1,4 @@
-# React Wagmi Starter Kit
+# Vite React Wagmi Starter Kit
 
 leverages the capabilities of [Rainbowkit 2](https://beta.rainbowkit.com/guides/rainbowkit-wagmi-v2) and [Wagmi 2](https://github.com/wevm/wagmi) for seamless wallet integration and authentication. The kit also includes Ethers 5 for interacting with the Ethereum blockchain.
 
