@@ -83,8 +83,8 @@ devDependencies:
     specifier: ^0.58.4
     version: 0.58.4(postcss@8.4.33)(vite@5.0.12)
   unplugin-env-parsing:
-    specifier: ^0.0.2
-    version: 0.0.2
+    specifier: ^0.0.3
+    version: 0.0.3
   vite:
     specifier: ^5.0.8
     version: 5.0.12(@types/node@20.11.7)
@@ -10755,8 +10755,8 @@ packages:
     engines: {node: '>= 0.8'}
     dev: false
 
-  /unplugin-env-parsing@0.0.2:
-    resolution: {integrity: sha512-8E0F7onWR0l7i+TvJkQ1X6MusambZGUmf0gcHpYWGhAEqLriGbzawGinL9eZiU27ra3zioLDKR5/6l6FnMcKFg==}
+  /unplugin-env-parsing@0.0.3:
+    resolution: {integrity: sha512-GFGzyFAaRT24PLGP4cdf0bWJRqkTcaBWwFm6Yxos/yMmwZRCs5XqGyBTbLkUGU3KbmiCvqBGCXkJhY2Zv6jrRw==}
     dependencies:
       kolorist: 1.8.0
       slash: 3.0.0
