@@ -1,4 +1,4 @@
 export * from './wagmi'
 export * from './contracts'
-export * from './abis'
+export * from './interfaces'
 export * from './addresses'
