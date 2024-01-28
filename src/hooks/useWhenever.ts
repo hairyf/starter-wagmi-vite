@@ -1,4 +1,5 @@
-import { WatchCallback, useWatch } from './useWatch'
+import type { WatchCallback } from './useWatch'
+import { useWatch } from './useWatch'
 
 export function useWhenever<T>(source: T, callback: WatchCallback<T>): void
 export function useWhenever<T>(source: any, cb: WatchCallback<Exclude<T, null | undefined>>) {
