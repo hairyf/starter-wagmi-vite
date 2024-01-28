@@ -4,8 +4,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "vite --mode testnet",
+    "dev:testnet": "vite --mode testnet",
+    "dev:mainnet": "vite --mode mainnet",
+    "build": "tsc && vite build --mode testnet",
+    "build:testnet": "tsc && vite build --mode testnet",
+    "build:mainnet": "tsc && vite build --mode mainnet",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "preview": "vite preview",
@@ -39,6 +43,7 @@
     "iconify-svgo-loader": "^1.0.3",
     "typescript": "^5.2.2",
     "unocss": "^0.58.4",
+    "unplugin-env-parsing": "^0.0.2",
     "vite": "^5.0.8",
     "vite-plugin-pages": "^0.32.0",
     "zx": "^7.2.3"
