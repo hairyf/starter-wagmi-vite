@@ -6,9 +6,9 @@ import { $ } from 'zx'
 
 process.env.FORCE_COLOR = '1'
 
-const baseAbisPath = path.resolve(process.cwd(), './src/config/contracts/abis/jsonc')
-const baseTypePath = path.resolve(process.cwd(), './src/config/contracts/abis/types')
-const indexPath = path.resolve(process.cwd(), './src/config/contracts/abis/index.ts')
+const baseAbisPath = path.resolve(process.cwd(), './src/config/abis/jsonc')
+const baseTypePath = path.resolve(process.cwd(), './src/config/abis/types')
+const indexPath = path.resolve(process.cwd(), './src/config/abis/index.ts')
 
 async function main() {
   const files = await fs.readdir(baseAbisPath)
