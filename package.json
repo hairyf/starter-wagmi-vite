@@ -43,7 +43,7 @@
     "iconify-svgo-loader": "^1.0.3",
     "typescript": "^5.2.2",
     "unocss": "^0.58.4",
-    "unplugin-env-parsing": "^0.0.3",
+    "unplugin-env-parsing": "^0.0.5",
     "vite": "^5.0.8",
     "vite-plugin-pages": "^0.32.0",
     "zx": "^7.2.3"
