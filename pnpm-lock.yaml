@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@rainbow-me/rainbowkit':
-    specifier: 2.0.0-beta.2
-    version: 2.0.0-beta.2(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)(viem@2.5.0)(wagmi@2.5.4)
+    specifier: 2.0.7
+    version: 2.0.7(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)(viem@2.5.0)(wagmi@2.5.4)
   '@tanstack/react-query':
     specifier: ^5.17.19
     version: 5.17.19(react@18.2.0)
@@ -1626,6 +1626,22 @@ packages:
       - supports-color
     dev: false
 
+  /@coinbase/wallet-sdk@3.9.3:
+    resolution: {integrity: sha512-N/A2DRIf0Y3PHc1XAMvbBUu4zisna6qAdqABMZwBMNEfWrXpAwx16pZGkYCLGE+Rvv1edbcB2LYDRnACNcmCiw==}
+    dependencies:
+      bn.js: 5.2.1
+      buffer: 6.0.3
+      clsx: 1.2.1
+      eth-block-tracker: 7.1.0
+      eth-json-rpc-filters: 6.0.1
+      eventemitter3: 5.0.1
+      keccak: 3.0.4
+      preact: 10.19.3
+      sha.js: 2.4.11
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   /@emotion/babel-plugin@11.11.0:
     resolution: {integrity: sha512-m4HEDZleaaCH+XgDDsPF15Ht6wTLsgDTeR3WYj9Q/k76JtWhrJjcP4+/XlG8LGT/Rol9qUfOIztXeA84ATpqPQ==}
     dependencies:
@@ -2924,20 +2940,20 @@ packages:
     resolution: {integrity: sha512-2LuNTFBIO0m7kKIQvvPHN6UE63VjpmL9rnEEaOOaiSPbZK+zUOYIzBAWcED+3XYzhYsd/0mD57VdxAEqqV52CQ==}
     dev: true
 
-  /@rainbow-me/rainbowkit@2.0.0-beta.2(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)(viem@2.5.0)(wagmi@2.5.4):
-    resolution: {integrity: sha512-sookd/7Rm9k8T3BgH2vQSb8FHImBKFvu4+YYmoxkB0pu9ySLYx/3k0t0N1b2q0DYw/z8xF4qeZm7DhotDPU2gw==}
+  /@rainbow-me/rainbowkit@2.0.7(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)(viem@2.5.0)(wagmi@2.5.4):
+    resolution: {integrity: sha512-S+f7oHKsuKsddqLEdH/yyjxLgqTF6P6/+y9xDMgY9BqMVSEIn4nTlkec4fphzrVNeg/kzizCzQgF0yRHwHkLlw==}
     engines: {node: '>=12.4'}
     peerDependencies:
-      react: '>=17'
-      react-dom: '>=17'
+      react: '>=18'
+      react-dom: '>=18'
       viem: 2.x
       wagmi: 2.x
     dependencies:
+      '@coinbase/wallet-sdk': 3.9.3
       '@vanilla-extract/css': 1.14.0
       '@vanilla-extract/dynamic': 2.1.0
       '@vanilla-extract/sprinkles': 1.6.1(@vanilla-extract/css@1.14.0)
       clsx: 2.1.0
-      i18n-js: 4.3.2
       qrcode: 1.5.3
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -2947,6 +2963,7 @@ packages:
       wagmi: 2.5.4(@tanstack/react-query@5.17.19)(@types/react@18.2.48)(react-dom@18.2.0)(react-native@0.73.2)(react@18.2.0)(typescript@5.3.3)(viem@2.5.0)
     transitivePeerDependencies:
       - '@types/react'
+      - supports-color
     dev: false
 
   /@react-native-async-storage/async-storage@1.21.0(react-native@0.73.2):
@@ -5116,6 +5133,7 @@ packages:
 
   /bignumber.js@9.1.2:
     resolution: {integrity: sha512-2/mKyZH9K85bzOEfhXDBFZTGd1CTs+5IHpeFQo9luiBG7hghdC851Pj2WAhb6E3R6b9tZj/XKhbg4fum+Kepug==}
+    dev: true
 
   /binary-extensions@2.2.0:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
@@ -7349,14 +7367,6 @@ packages:
     resolution: {integrity: sha512-AXcZb6vzzrFAUE61HnN4mpLqd/cSIwNQjtNWR0euPm6y0iqx3G4gOXaIDdtdDwZmhwe82LA6+zinmW4UBWVePQ==}
     engines: {node: '>=16.17.0'}
 
-  /i18n-js@4.3.2:
-    resolution: {integrity: sha512-n8gbEbQEueym2/q2yrZk5/xKWjFcKtg3/Escw4JHSVWa8qtKqP8j7se3UjkRbHlO/REqFA0V/MG1q8tEfyHeOA==}
-    dependencies:
-      bignumber.js: 9.1.2
-      lodash: 4.17.21
-      make-plural: 7.3.0
-    dev: false
-
   /i18next-browser-languagedetector@7.2.0:
     resolution: {integrity: sha512-U00DbDtFIYD3wkWsr2aVGfXGAj2TgnELzOX9qv8bT0aJtvPV9CRO77h+vgmHFBMe7LAxdwvT/7VkCWGya6L3tA==}
     dependencies:
@@ -8203,6 +8213,7 @@ packages:
 
   /lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
+    dev: true
 
   /log-symbols@4.1.0:
     resolution: {integrity: sha512-8XPvpAA8uyhfteu8pIvQxpJZ7SYYdpUivZpGy6sFsBuKRY/7rQGavedeB8aK+Zkyq6upMFVL/9AW6vOYzfRyLg==}
@@ -8256,10 +8267,6 @@ packages:
     dependencies:
       pify: 4.0.1
       semver: 5.7.2
-    dev: false
-
-  /make-plural@7.3.0:
-    resolution: {integrity: sha512-/K3BC0KIsO+WK2i94LkMPv3wslMrazrQhfi5We9fMbLlLjzoOSJWr7TAdupLlDWaJcWxwoNosBkhFDejiu5VDw==}
     dev: false
 
   /makeerror@1.0.12:
