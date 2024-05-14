@@ -13,7 +13,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "preview": "vite preview",
-    "gen:abi": "esno scripts/gen-abi.ts"
+    "generate:abi": "esno scripts/generate.ts"
   },
   "dependencies": {
     "@rainbow-me/rainbowkit": "^2.0.7",
