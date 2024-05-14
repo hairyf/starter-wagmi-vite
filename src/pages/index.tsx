@@ -1,7 +1,9 @@
+/* eslint-disable no-console */
+/* eslint-disable react-dom/no-missing-button-type */
 import { ConnectButton } from '@rainbow-me/rainbowkit'
 import { useAccount } from 'wagmi'
-import { withLayout } from '../layout'
 import { getEthersContract } from 'wagmi-ethers-adapters/ethers-v6'
+import { withLayout } from '../layout'
 import { contracts } from '@/config'
 
 function Page() {

@@ -2,11 +2,10 @@
 export {}
 declare global {
   interface ImportMetaEnv {
-    readonly 'VITE_APP_CHAIN_ID': number
+
   }
   namespace NodeJS {
     interface ProcessEnv {
-      readonly 'VITE_APP_CHAIN_ID': number
       readonly 'ALLUSERSPROFILE': string
       readonly 'APPCODE_VM_OPTIONS': string
       readonly 'APPDATA': string
@@ -22,6 +21,7 @@ declare global {
       readonly 'DATASPELL_VM_OPTIONS': string
       readonly 'DEVECOSTUDIO_VM_OPTIONS': string
       readonly 'DriverData': string
+      readonly 'EDITOR': string
       readonly 'FPS_BROWSER_APP_PROFILE_STRING': string
       readonly 'FPS_BROWSER_USER_PROFILE_STRING': string
       readonly 'GATEWAY_VM_OPTIONS': string
@@ -48,7 +48,6 @@ declare global {
       readonly 'PATHEXT': string
       readonly 'PHPSTORM_VM_OPTIONS': string
       readonly 'PNPM_HOME': string
-      readonly 'PNPM_SCRIPT_SRC_DIR': string
       readonly 'PROCESSOR_ARCHITECTURE': string
       readonly 'PROCESSOR_IDENTIFIER': string
       readonly 'PROCESSOR_LEVEL': number
