@@ -2,6 +2,7 @@ import fs from 'node:fs/promises'
 import path from 'node:path'
 import process from 'node:process'
 import { $ } from 'zx'
+import { execSync } from 'child_process'
 
 process.env.FORCE_COLOR = '1'
 
@@ -20,9 +21,9 @@ async function main() {
 
   for (const file of files) {
     const jsonPath = path.join(baseAbisPath, file)
-    await $`abi-types-generator ${jsonPath} --output=${baseTypePath} --provider ethers_v5`
+     execSync(`abi-types-generator ${jsonPath} --output=${baseTypePath} --provider ethers_v5`)
   }
-
+  
   const contracts = files.map(file => file.split('.')[0])
 
   let indexFile = ''
