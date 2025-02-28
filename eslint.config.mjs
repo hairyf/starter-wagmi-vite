@@ -1,11 +1,12 @@
-// eslint.config.js
 import antfu from '@antfu/eslint-config'
 
 export default antfu({
-  typescript: true,
+  formatters: true,
+  unocss: true,
   react: true,
-  vue: false,
   rules: {
     'react-refresh/only-export-components': 'off',
+    'react-dom/no-missing-button-type': 'off',
+    'react/prefer-destructuring-assignment': 'off',
   },
 })

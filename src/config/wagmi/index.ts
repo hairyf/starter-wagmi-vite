@@ -1,22 +1,15 @@
+/* eslint-disable ts/ban-ts-comment */
+import { chains } from '@harsta/client'
 import { connectorsForWallets, getDefaultWallets } from '@rainbow-me/rainbowkit'
-import type { CreateConfigParameters } from 'wagmi'
-import { createConfig, http } from 'wagmi'
-import { goerli, mainnet } from 'wagmi/chains'
 
-const configs: Record<string, CreateConfigParameters> = {
-  5: {
-    chains: [goerli],
-    transports: { [goerli.id]: http() },
-  },
-  1: {
-    chains: [mainnet],
-    transports: { [mainnet.id]: http() },
-  },
-}
+import { createConfig } from 'wagmi'
 
-const wallets = getDefaultWallets().wallets
+export const wallets = getDefaultWallets().wallets
+export const connectors = connectorsForWallets(wallets, { appName: 'Starter', projectId: ' ' })
 
 export const config = createConfig({
-  connectors: connectorsForWallets(wallets, { appName: 'Starter', projectId: ' ' }),
-  ...configs[import.meta.env.VITE_APP_CHAIN_ID],
+  // @ts-expect-error
+  chains: Object.values(chains),
+  connectors,
+  ssr: true,
 })

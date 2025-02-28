@@ -1,10 +1,10 @@
+import { RainbowKitProvider } from '@rainbow-me/rainbowkit'
 import React, { Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, useRoutes } from 'react-router-dom'
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit'
+import routes from '~react-pages'
 import { MountsProvider, WagmiConfigProvider } from './components'
 import { config } from './config'
-import routes from '~react-pages'
 
 import '@rainbow-me/rainbowkit/styles.css'
 import 'virtual:uno.css'

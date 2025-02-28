@@ -1,7 +1,7 @@
 import type { FunctionComponent, PropsWithChildren } from 'react'
-import viteLogo from '/vite.svg'
 import reactLogo from '../assets/react.svg'
 import './index.css'
+import viteLogo from '/vite.svg'
 
 export function Layout(props: PropsWithChildren) {
   return (
