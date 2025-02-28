@@ -5,11 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "dev:testnet": "vite",
-    "dev:mainnet": "vite",
     "build": "tsc && vite build",
-    "build:testnet": "tsc && vite build",
-    "build:mainnet": "tsc && vite build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "preview": "vite preview",
